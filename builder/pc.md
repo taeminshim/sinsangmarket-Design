@@ -34,7 +34,9 @@ key는 Figma에서 `importComponentByKeyAsync`(단일) / `importComponentSetByKe
 | `thumb_top/alarm` | 세트 | 썸네일 알림 | size=Default·small(100↓) | `52a7229e9181f91b1fbd331123d520295b6787d3` |
 | `badge_mbs` | 세트 | 멤버십 배지 | size=18·24·32 | `c1dfc953f6a79203c36b2a83fe0f3d465c360489` |
 
-## 매장 (Store_badge)
+## 매장 (Store_badge) — ⚠️ 전부 미게시
+
+> ⚠️ 이 섹션 컴포넌트는 PC UI Builder 원본에는 있지만 **라이브러리에 게시되지 않아** 작업 파일에서 key로 불러오면 실패해요. 일부러 숨긴 건지 게시가 빠진 건지 빌더 담당자 확인이 필요해요. 그 전까지 멤버십 배지는 게시된 `badge_mbs`(상품 카드 섹션)를 쓰고, 매장 썸네일이 꼭 필요하면 빌더 원본에서 복사해 와요 (이 경우 라이브러리와 연결되지 않은 로컬 사본이 돼요).
 
 | 컴포넌트 | 종류 | 언제 | 주요 속성 | key |
 |---|---|---|---|---|
@@ -45,6 +47,9 @@ key는 Figma에서 `importComponentByKeyAsync`(단일) / `importComponentSetByKe
 | `마이페이지_내 거래처` | 세트 | 내 거래처 카드 | Property=내 거래처·승인중 거래처 | `b946816db1713be41e3847596ed3b5c8d759c46b` |
 | `main_storeinfo_section1` | 세트 | 매장 정보 영역 | size=2000·1440·1200px | `7b791e9b30fafe6336926b3ae9f65e48f442e2bb` |
 | `section2_도매홈` | 세트 | 도매홈 섹션 | size=2000·1440·1200px | `b7813770856e9ae2774cecf8c17916b9357484f2` |
+| `Thumbnail` (매장) | 세트 | 매장 대표 이미지 | size=1200·2000·1440 | `3a9edd864049b708480f769274d85d7f232b4453` |
+| `main_section1_상품리스트_2000px` | 세트 | 매장 메인 상품 리스트 | size=2000px·1200px | `7892ecf0cbd11747fe7ae6fc1b288a896acc8137` |
+| `소매_프리미엄도매홈` | 단일 | 소매 프리미엄 도매홈 영역 (슬롯: 컨텐츠, list) | — | `27fda273c09721802d2ae484666b20914335d842` |
 
 > 빌더 파일 안에 `마이페이지_내 거래처`가 두 개 있어요. 위 키는 노드 2347:29766 쪽이에요. 다른 하나는 `d18baeb85eb44df2a64f260713bd25ed8deae7b3`(2363:41122)이니 어느 쪽이 최신인지 빌더 담당자 확인이 필요해요.
 
