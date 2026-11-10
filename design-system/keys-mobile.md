@@ -33,6 +33,7 @@
 | `searchInput01` | 라인형 검색 입력 | status | `9a4e0015e5e6c1b3e327c6ade68a1cb928b51f77` |
 | `searchInput02` | 채움형 검색 입력 | status | `05c6a1db40734fd6f770f716a7499dab9a4a23e3` |
 | `popUp` | 중앙 팝업 | — | `c36272758d67cc043ca8396f799c47775b49523a` |
+| `notice` | 회색 안내 박스 (가이드 영역) | title=yes·no. 안쪽 `body`의 `type=Dev`면 `labeledTextBullet01` 불릿 5줄 — 쓰는 줄만 남기고 숨겨요 | `318517a389e5061c55ef47f712491845da46ad7e` |
 
 버튼 컬러 번호 의미는 [components](components.md)의 "버튼 컬러 번호"를 봐요. 위 표는 **SemiMedium(40)** 만 정리했고, 다른 사이즈는 `btn{Style}{Size}{NN}` 이름으로 검색해요.
 
@@ -84,6 +85,8 @@
 
 | 상황 | 주의 |
 |---|---|
+| 상단바 제목 | `❤︎top Bar`의 제목은 속성으로 안 바뀌어요. 안쪽 텍스트 노드를 찾아 직접 바꿔요 |
+| variant와 글자를 같이 바꿀 때 | variant를 바꾸면 안쪽 텍스트가 새로 갈려요. **variant 먼저, 글자는 그다음에** 넣어요 |
 | 버튼 글자 바꾸기 | 글자 속성 이름이 `Text#…` 형태라서, `componentProperties` 키 중 `Text#`로 시작하는 것을 찾아 `setProperties`로 바꿔요 |
 | 칩 아이콘 바꾸기 | 칩 안에는 아이콘이 중첩돼 있어요. **바깥 아이콘만** `swapComponent`하고 그 안쪽 아이콘은 건드리지 않아요 (건드리면 오류가 나고, 오류가 나면 그 호출의 수정이 전부 취소돼요) |
 | 칩을 줄일 때 | 지우지 말고 `visible = false`로 숨기면 레이아웃이 알아서 당겨져요 |

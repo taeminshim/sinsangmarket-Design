@@ -30,6 +30,17 @@
 | 템플릿 | [Building on templates](https://www.figma.com/design/7eHgyABjNbCL1fVzpbZ1IX?node-id=169-12991) | [Building on templates](https://www.figma.com/design/aFam9mIsTVZqNmKdHHYq0f?node-id=3-84) |
 | 간격 가이드 | [Page Spacing](https://www.figma.com/design/7eHgyABjNbCL1fVzpbZ1IX?node-id=480-34034) | [Page Spacing](https://www.figma.com/design/aFam9mIsTVZqNmKdHHYq0f?node-id=198-44524) |
 
+## as-is 원본 화면 찾기
+
+기존 화면을 고칠 때는 새로 그리기 전에 원본부터 찾아요.
+
+- [최신화 파일위치 (Figma 인덱스)](https://www.figma.com/design/8ayuu3IXhH84DfVrCJaEcO) — 서비스 영역별 최신 원본 파일 링크
+- [최신화 산출물 (엑셀)](https://docs.google.com/spreadsheets/d/1GdfSsQ8HYBZTCBX8lQg0CA6ohf8sEwzHrYHYFmkiE_g) — 같은 목록을 시트로 관리
+
+찾은 뒤에는
+- 원본 프레임을 복제해 **원본과 수정안을 나란히** 두고, 수정안 위에 원본 링크를 남겨요.
+- 원본 안의 일부 컴포넌트는 다른 파일로 불러와지지 않아요. 그럴 땐 디자인 시스템 컴포넌트로 다시 조립해요.
+
 ## 문서
 
 | 구분 | 문서 | 내용 |
