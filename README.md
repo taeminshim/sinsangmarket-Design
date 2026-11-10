@@ -30,9 +30,14 @@
 | 템플릿 | [Building on templates](https://www.figma.com/design/7eHgyABjNbCL1fVzpbZ1IX?node-id=169-12991) | [Building on templates](https://www.figma.com/design/aFam9mIsTVZqNmKdHHYq0f?node-id=3-84) |
 | 간격 가이드 | [Page Spacing](https://www.figma.com/design/7eHgyABjNbCL1fVzpbZ1IX?node-id=480-34034) | [Page Spacing](https://www.figma.com/design/aFam9mIsTVZqNmKdHHYq0f?node-id=198-44524) |
 
+## 그리기 전 규칙
+
+1. **원본 찾기는 먼저 물어봐요.** 원본을 찾는 데 시간과 토큰이 많이 들어요. "만들어줘"라는 요청을 받으면 바로 찾지 말고 "as-is 원본을 찾아서 할까요?"라고 먼저 물어요. 찾으라고 할 때만 아래 [as-is 원본 화면 찾기](#as-is-원본-화면-찾기)로 가요.
+2. **디자인 시스템 먼저, 빌더는 그다음이에요.** 디자인 시스템에 있는 컴포넌트를 먼저 써요. 디자인 시스템에 없을 때만(예: 상품 썸네일·카드) UI Builder에서 가져와요.
+
 ## as-is 원본 화면 찾기
 
-기존 화면을 고칠 때는 새로 그리기 전에 원본부터 찾아요.
+원본을 찾으라고 했을 때 여기서 찾아요.
 
 - [최신화 파일위치 (Figma 인덱스)](https://www.figma.com/design/8ayuu3IXhH84DfVrCJaEcO) — 서비스 영역별 최신 원본 파일 링크
 - [최신화 산출물 (엑셀)](https://docs.google.com/spreadsheets/d/1GdfSsQ8HYBZTCBX8lQg0CA6ohf8sEwzHrYHYFmkiE_g) — 같은 목록을 시트로 관리
