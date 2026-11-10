@@ -33,7 +33,13 @@
 | Etc | `Etc/b70` ~ `Etc/b2` | 검정 70% ~ 2% | 딤·오버레이 |
 | | `Etc/w90` ~ `Etc/w5` | 흰색 90% ~ 5% | 이미지 위 요소 |
 
-> PC에는 `Secondary/Dealibird`(#00197D)가 추가로 있고, 일부 이름 표기가 달라요(`mbs/…` 소문자, `Service/link&info`). `Flowkit/…` 색은 플로우 문서용이라 화면에 쓰지 않아요.
+> **PC 라이브러리는 이름이 조금 달라요.** 검색할 때 아래 이름으로 찾아요.
+> - 성공 색이 `Service/wuccess`(원본 오타)예요. `Service/success`로 찾으면 안 나와요.
+> - 링크 색은 `Service/link&info`, 멤버십은 `mbs/…`(소문자)예요.
+> - `Secondary/secondary02`가 없고, `Secondary/Dealibird`(#00197D)와 `Line/g40`(#D0D6E1)이 더 있어요.
+> - `Service/warning`은 #F6A300, `Service/wuccess`는 #0DAA19로 모바일과 값이 달라요.
+>
+> `Flowkit/…` 색은 플로우 문서용이라 화면에 쓰지 않아요.
 
 ## 타이포 (Text styles) — Pretendard
 
@@ -43,9 +49,9 @@ Pretendard는 국내·글로벌용이고, 중국어 화면은 시스템 폰트�
 
 | 용도 | 모바일 스타일 | 크기(행간) | PC에 추가로 있는 것 |
 |---|---|---|---|
-| Heading | `h1sb32` · `h3sb28` · `h2sb24` | 32(40) · 28(36) · 24(32) | `h1m40` 40(50), `h2m38` 38(48), `h3sb32`, `h4b28`·`h4sb28`, `h5b24`·`h5sb24`·`h5m24`·`h5r24` |
+| Heading | `h1sb32` · `h3sb28` · `h2sb24` (모바일 전용) | 32(40) · 28(36) · 24(32) | PC는 이름이 달라요: `h1m40` 40(50), `h2m38` 38(48), `h3sb32` 32(40), `h4b28`·`h4sb28` 28(36), `h5b24`·`h5sb24`·`h5m24`·`h5r24` 24(32) |
 | Subhead | `sh1sb20` · `sh1r20` | 20(28) | |
-| | `sh2sb18` · `sh2r18` | 18(26) | `sh2m18`, `sh3r18` |
+| | `sh2sb18` · `sh2r18` | 18(26) | `sh2m18` 추가. PC에는 `sh2r18`이 없고 같은 값이 `sh3r18`이에요 |
 | | `sh3sb16` · `sh3r16` | 16(22) | `sh3m16` |
 | Body | `b1sb15` · `b1r15` | 15(20) | `b1m15` |
 | | `b2sb14` · `b2r14` | 14(20) | `b2m14` |
