@@ -15,6 +15,8 @@
 
 AOS 템플릿(`AOS-info`, `AOS-form`)도 있지만 팀 기준상 쓰지 않아요.
 
+같은 페이지에 `padding`(세트, Property 1=Default·last, 텍스트 속성 1개, key `3ae4cadc03a3dc39803ae075a1022fc6cdd9b55c`)도 게시돼 있어요. 템플릿 안에서 여백 값을 표시하는 라벨로 보여요 — 화면 결과물에 넣는 요소인지는 빌더 담당자 확인이 필요해요.
+
 **화면 유형별 블록 조합** — [간격 가이드](https://www.figma.com/design/7eHgyABjNbCL1fVzpbZ1IX?node-id=480-34034)에 실제 예시가 있어요.
 
 | 유형 | 예시 |

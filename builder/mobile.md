@@ -71,10 +71,10 @@ key는 Figma에서 `importComponentByKeyAsync`(단일) / `importComponentSetByKe
 | `B-Info_Text` | 단일 | 한 줄 안내 문구 | icon, tag, dot | `23d01b016eda19167fba392d56a6ba2963e8d877` |
 | `B-Text_Dropdown` ⚠️ 미게시 | 세트 | 텍스트 드롭다운 (구버전) | sub text | `6efbee962bc68d4e1ec7ef0ca68d4f0872e51ef7` |
 | `Text_Dropdown` | 단일 | 텍스트 드롭다운 — `B-Text_Dropdown` 대신 이걸 써요 | — | `6b80205a7fc87d09f43068b08e1129c143082d47` |
-
-> ⚠️ `B-Info`, `B-Text_Dropdown`은 라이브러리에 게시되지 않아 key로 불러오면 실패해요. 드롭다운은 게시된 `Text_Dropdown`을, 안내 문구는 `B-Info_Text`를 써요.
 | `Related` | 단일 | 연관 검색어 줄 | — | `1d4bedc9128dc5b42a763dc8b75868d678dae6ab` |
 | `B-Portrait Bar` | 세트 | 상태바 | Portrait Bar=AOS·IOS | `ba9c4bf94e920edbd77080962cad1dd2d771997e` |
+
+> ⚠️ `B-Info`, `B-Text_Dropdown`은 라이브러리에 게시되지 않아 key로 불러오면 실패해요. 드롭다운은 게시된 `Text_Dropdown`을, 안내 문구는 `B-Info_Text`를 써요.
 
 
 ## 디자인 시스템 기본 컴포넌트
