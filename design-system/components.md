@@ -2,6 +2,7 @@
 
 버튼·칩·태그·텍스트링크·입력 같은 기본 컴포넌트는 **이름만 보면 생김새를 알 수 있게** 지어져 있어요. 그래서 목록을 외우지 않고 이름 규칙으로 찾아 써요.
 이 컴포넌트들은 **해제(Detach)하지 않아요.** 속성(variant)만 바꿔서 써요.
+**컴포넌트 레이어 이름도 바꾸지 않아요.** 인스턴스 이름은 원본 컴포넌트 이름(`Thumbnail/Standard 3:4`, `btnFilledLarge01` 등) 그대로 둬요. 이름이 바뀌면 개발·QA에서 어떤 컴포넌트인지 알아보기 어려워요. 구분이 필요하면 인스턴스를 감싼 프레임 이름에 적어요.
 
 원본: [M_Design system Guide](https://www.figma.com/design/5WsL9kg8fteVvSDUw4L1s6?node-id=0-1) · [PC_Design system Guide](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=0-1)
 
