@@ -22,14 +22,18 @@ key는 Figma에서 `importComponentByKeyAsync`(단일) / `importComponentSetByKe
 | `thumb_top/zzim` | 단일 | 썸네일 우상단 찜 | — | `7265a408349353e5c1559797cce6b06b94ef91e4` |
 | `thumb_top/alarm` | 단일 | 썸네일 우상단 알림 | — | `a3ea4f1715f52fa155eacd0bc018e526af3f6fda` |
 | `Showcase-Card` | 단일 | 가로형 상품 요약 카드 | — | `2d3558e2fd473e008b44e680fea8641aad025bac` |
+| `Thumbnail-1:0.833` | 세트 | 가로가 더 긴 썸네일 (1:0.833) | State=Default·Empty_white·Empty_gray·inactive | `e41dfa6ac2d247c99477643a9832f8f79616eb22` |
+| `Thumbnail-1:1.465` | 세트 | 세로로 긴 썸네일 (1:1.465) | State=Default·Empty_white·Empty_gray·inactive | `edb8e21e74564787185c4dd8e981b1fed2c166ef` |
 
 ## 매장 (Store_badge)
 
 | 컴포넌트 | 종류 | 언제 | 주요 속성 | key |
 |---|---|---|---|---|
 | `Store_thumb` | 세트 | 매장 썸네일 + 멤버십 배지 | Thumnail=80·72·54·50·48·44·36·32, mbs_badge, thumb_img, thumb_empty | `83a1059d5559e99f4b3ad4d532a54cfd6a0718ab` |
-| `Store_thumb_empty` | 세트 | 매장 이미지 없을 때 | size=71↑·70↓, Color=gray·white | `9d8209d9ecde2cda588c848b2c7339489d444c53` |
-| `mbs_badge` | 세트 | 멤버십 배지 단독 | 노출=48↑·47↓ | `56172baa3611aee8569c07c88a07b982c081f597` |
+| `Store_thumb_empty` ⚠️ 미게시 | 세트 | 매장 이미지 없을 때 | size=71↑·70↓, Color=gray·white | `9d8209d9ecde2cda588c848b2c7339489d444c53` |
+| `mbs_badge` ⚠️ 미게시 | 세트 | 멤버십 배지 단독 | 노출=48↑·47↓ | `56172baa3611aee8569c07c88a07b982c081f597` |
+
+> ⚠️ `Store_thumb_empty`, `mbs_badge`는 빌더 원본에는 있지만 **라이브러리에 게시되지 않아** 작업 파일에서 key로 불러오면 실패해요. 당분간 `Store_thumb`의 `thumb_empty`·`mbs_badge` 속성을 켜서 대신 써요.
 
 ## 목록 (Table)
 
@@ -63,9 +67,12 @@ key는 Figma에서 `importComponentByKeyAsync`(단일) / `importComponentSetByKe
 | `B-Content_Tab` | 세트 | 콘텐츠 탭 | Tab, Tab Option, Fixed tab, Related, tabBar, Text_Dropdown | `795fd4e044f6a47c875cbb42b979864fb0fee0d8` |
 | `B-Content_Title` | 세트 | 섹션 타이틀 (좌: 텍스트·숫자·페이지 / 우: 버튼·필터·정렬·체크·스위치·Sponsored) | Type=Type01·Spon+Btn·Type02, L_*/R_* 토글 | `2ac011342614413bfed024e74409de65549967cb` |
 | `B-Content_search+filter` | 세트 | 지면 내 검색창 + 필터 바 | search, filter Bar | `8b27433f52460eda63f2a90a98aec10b696c10d5` |
-| `B-Info` | 세트 | 안내 박스 | Type=Basic·warning, Title, icon, dot, tag, btn | `46cbe4c7ff98aab54bb6d90b591afe1f6b614503` |
+| `B-Info` ⚠️ 미게시 | 세트 | 안내 박스 | Type=Basic·warning, Title, icon, dot, tag, btn | `46cbe4c7ff98aab54bb6d90b591afe1f6b614503` |
 | `B-Info_Text` | 단일 | 한 줄 안내 문구 | icon, tag, dot | `23d01b016eda19167fba392d56a6ba2963e8d877` |
-| `B-Text_Dropdown` | 세트 | 텍스트 드롭다운 | sub text | `6efbee962bc68d4e1ec7ef0ca68d4f0872e51ef7` |
+| `B-Text_Dropdown` ⚠️ 미게시 | 세트 | 텍스트 드롭다운 (구버전) | sub text | `6efbee962bc68d4e1ec7ef0ca68d4f0872e51ef7` |
+| `Text_Dropdown` | 단일 | 텍스트 드롭다운 — `B-Text_Dropdown` 대신 이걸 써요 | — | `6b80205a7fc87d09f43068b08e1129c143082d47` |
+
+> ⚠️ `B-Info`, `B-Text_Dropdown`은 라이브러리에 게시되지 않아 key로 불러오면 실패해요. 드롭다운은 게시된 `Text_Dropdown`을, 안내 문구는 `B-Info_Text`를 써요.
 | `Related` | 단일 | 연관 검색어 줄 | — | `1d4bedc9128dc5b42a763dc8b75868d678dae6ab` |
 | `B-Portrait Bar` | 세트 | 상태바 | Portrait Bar=AOS·IOS | `ba9c4bf94e920edbd77080962cad1dd2d771997e` |
 
