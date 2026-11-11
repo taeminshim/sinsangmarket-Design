@@ -42,7 +42,10 @@
 - ⚠️ 미게시 표시가 있는 빌더 컴포넌트는 key로 불러오면 실패한다. 표에 적힌 대체 컴포넌트를 쓴다.
 - **원본 화면 안의 일부 컴포넌트는 다른 파일로 불러와지지 않는다.** 그럴 땐 디자인 시스템 컴포넌트로 다시 조립한다.
 - 원본을 찾았으면 원본과 수정안을 나란히 두고, 원본 링크는 `[AS-IS]` 타이틀에 건다 (`README.md` 참고). 원본 없이 먼저 그린 초안은 비교용으로 지우지 않는다.
-- **PC 디자인 시스템은 `❖ [PC] Design system Guide_V1.4` 페이지(https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=0-1)에서만 가져온다.** 다른 페이지는 테스트용이다. 검색 결과에 `Buttons/…`, `bt_…`, 이름이 그냥 `chip`처럼 이름 규칙에 안 맞는 것이 나오면 테스트 페이지 것이니 쓰지 않는다.
+- **디자인 시스템은 각 파일의 가이드 페이지(`0:1`)에서만 가져온다.** 다른 페이지는 테스트·예전 페이지다.
+  - 모바일: `❖ [M] Design system Guide_V1.4` (https://www.figma.com/design/5WsL9kg8fteVvSDUw4L1s6?node-id=0-1)
+  - PC: `❖ [PC] Design system Guide_V1.4` (https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=0-1)
+  - 키 표에 있는 키는 확인된 것이다. 검색으로 **처음 쓰는 컴포넌트는 `libraries.md`의 "가이드 페이지 확인"으로 키를 확인**한다. 모바일 테스트 페이지에는 이름이 똑같은 컴포넌트가 있어서 이름만으로는 못 거른다. PC에서 `Buttons/…`, `bt_…`처럼 이름 규칙에 안 맞는 것은 바로 버린다.
 - 라이브러리 원본 파일(디자인 시스템·빌더 4개)에는 그리지 않는다.
 
 ## Figma 작업 팁 (그동안 겪은 오류)

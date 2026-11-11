@@ -9,6 +9,8 @@
 | PC | 디자인 시스템 | [신상마켓] PC_Design system Guide | [열기](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa) | `lk-fd4e5f0647c7ecbdeb2f2e5d463df19402a8c01a95c0edd0f85a98a097a3d9a87c67887543555a217b404c7dce0fe1d4862f640f9446837964a293d6e8e5025d` |
 | PC | UI Builder | PC UI Builder | [열기](https://www.figma.com/design/aFam9mIsTVZqNmKdHHYq0f) | `lk-e98052a784de80869dbfd36e80ae628d31c5cbe901838008f59c24e242e0097993d79398e78a31053247900e95c786c9fdbc7e31e6ac132507eca1a913c84017` |
 
+> **모바일 디자인 시스템은 [`❖ [M] Design system Guide_V1.4`](https://www.figma.com/design/5WsL9kg8fteVvSDUw4L1s6?node-id=0-1) 페이지에서만 가져와요.** 같은 파일의 다른 페이지(테스트, ATOMS, Empty Guide, Typography·Buttons·Forms 등 예전 페이지)는 쓰지 않아요. 모바일 '테스트' 페이지에는 진짜와 **이름이 똑같은** 컴포넌트(`chipFilledSmall01`, `Thumbnail/360*240` 등)가 600개 가까이 있어서 이름만으로는 거를 수 없어요. 처음 쓰는 컴포넌트는 아래 "가이드 페이지 확인"으로 키를 확인해요.
+
 > **PC 디자인 시스템은 [`❖ [PC] Design system Guide_V1.4`](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=0-1) 페이지에서만 가져와요.** 같은 파일의 다른 페이지(테스트, 테스트2, ATOMS 등)는 테스트용이에요. 특히 '테스트' 페이지에는 예전 이름 체계 컴포넌트(`Buttons/Large 50/bt_outlined`, 이름이 그냥 `chip` 등)가 300개 넘게 있어서 검색에 섞여 나와요. 이름 규칙(`btnFilledLarge01`처럼 `{종류}{스타일}{사이즈}{번호}`)에 맞지 않으면 쓰지 않아요.
 
 > 조직에는 신상애드, 글로벌 로고 대응 등 **다른 라이브러리도 많아요.** 컴포넌트를 검색할 때는 반드시 위 4개 라이브러리로 범위를 좁혀요.
@@ -55,3 +57,18 @@ UI Builder = 디자인 시스템을 조합한 화면 단위 블록과 템플릿.
 
 - 상품 이미지는 3:4 원본, 1:1 썸네일은 3:4의 센터 크롭이에요. 빌더의 `Thumbnail/Standard 3:4`, `Thumbnail/Standard 1:1`을 써요.
 - 썸네일 상태는 `State` variant로 표현해요: Default / Empty / inactive / soldout.
+
+## 가이드 페이지 확인 (처음 쓰는 컴포넌트)
+
+키 표(keys-mobile, keys-pc)에 있는 키는 가이드 페이지에서 확인된 것이라 그대로 써요. 검색으로 새로 찾은 컴포넌트는 쓰기 전에 디자인 시스템 파일에서 아래를 실행해 가이드 페이지에 있는지 확인해요 (읽기 전용). 결과의 `missing`에 나온 키는 테스트·예전 페이지 것이니 쓰지 않아요.
+
+- 모바일: 파일 `5WsL9kg8fteVvSDUw4L1s6`, 페이지 `0:1`
+- PC: 파일 `hzFtDckwBKxfz3QQBrOnHa`, 페이지 `0:1`
+
+```js
+const KEYS = ['검색에서 나온 componentKey 또는 componentSetKey'];
+const page = figma.root.children.find(p => p.id === '0:1');
+await figma.setCurrentPageAsync(page);
+const onGuide = new Set(page.findAllWithCriteria({ types: ['COMPONENT', 'COMPONENT_SET'] }).map(n => n.key));
+return { ok: KEYS.filter(k => onGuide.has(k)), missing: KEYS.filter(k => !onGuide.has(k)) };
+```
