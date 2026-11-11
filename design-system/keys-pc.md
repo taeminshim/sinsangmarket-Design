@@ -4,6 +4,7 @@
 빌더(PC UI Builder) 컴포넌트 키는 [builder/pc](../builder/pc.md)에 있어요.
 
 > **키가 안 먹으면 검색 결과를 따라요.** 라이브러리가 업데이트되면 키가 바뀔 수 있어요. 표에 없는 컴포넌트는 `includeLibraryKeys`로 PC 디자인 시스템(`lk-fd4e5f06…`, [libraries](../libraries.md))만 남겨서 검색해요.
+> **PC 디자인 시스템은 [`❖ [PC] Design system Guide_V1.4`](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=0-1) 페이지의 컴포넌트만** 넣어요. 다른 페이지(테스트 등)는 테스트용이에요.
 > PC는 이름 규칙이 모바일과 다른 곳이 있어요 (글자 스타일 `sh3r18`, `h1m40` 등). [foundations](foundations.md)를 같이 봐요.
 
 불러오는 법

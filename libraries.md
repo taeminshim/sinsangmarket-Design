@@ -9,6 +9,8 @@
 | PC | 디자인 시스템 | [신상마켓] PC_Design system Guide | [열기](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa) | `lk-fd4e5f0647c7ecbdeb2f2e5d463df19402a8c01a95c0edd0f85a98a097a3d9a87c67887543555a217b404c7dce0fe1d4862f640f9446837964a293d6e8e5025d` |
 | PC | UI Builder | PC UI Builder | [열기](https://www.figma.com/design/aFam9mIsTVZqNmKdHHYq0f) | `lk-e98052a784de80869dbfd36e80ae628d31c5cbe901838008f59c24e242e0097993d79398e78a31053247900e95c786c9fdbc7e31e6ac132507eca1a913c84017` |
 
+> **PC 디자인 시스템은 [`❖ [PC] Design system Guide_V1.4`](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=0-1) 페이지에서만 가져와요.** 같은 파일의 다른 페이지(테스트, 테스트2, ATOMS 등)는 테스트용이에요. 특히 '테스트' 페이지에는 예전 이름 체계 컴포넌트(`Buttons/Large 50/bt_outlined`, 이름이 그냥 `chip` 등)가 300개 넘게 있어서 검색에 섞여 나와요. 이름 규칙(`btnFilledLarge01`처럼 `{종류}{스타일}{사이즈}{번호}`)에 맞지 않으면 쓰지 않아요.
+
 > 조직에는 신상애드, 글로벌 로고 대응 등 **다른 라이브러리도 많아요.** 컴포넌트를 검색할 때는 반드시 위 4개 라이브러리로 범위를 좁혀요.
 
 디자인 시스템 = 토큰·기본 컴포넌트 (Typography, Grid, Colors, Indentations 4px, Iconography, Shadows, Corner radius, Navigation, Buttons, UI Elements, Forms, Filter Tab).
