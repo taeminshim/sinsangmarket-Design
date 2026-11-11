@@ -72,6 +72,7 @@ Claude는 저장소를 열면 [CLAUDE.md](CLAUDE.md)(길잡이)부터 읽고, �
 | | [components](design-system/components.md) | 컴포넌트 이름 규칙, 버튼·칩·태그·폼·모달 |
 | | [keys-mobile](design-system/keys-mobile.md) | 모바일 자주 쓰는 컴포넌트·스타일 key |
 | | [keys-pc](design-system/keys-pc.md) | PC 자주 쓰는 컴포넌트·스타일 key (쌓아가는 중) |
+| | [audit](design-system/audit.md) | 다 그린 뒤 검수 스크립트 (하드코딩 색·글자, 해제, 다른 라이브러리) |
 | UI Builder | [mobile](builder/mobile.md) | M_UI Builder — 썸네일·카드, 골격 블록 |
 | | [pc](builder/pc.md) | PC UI Builder — 썸네일·카드, 표, 푸터 |
 | | [templates](builder/templates.md) | 화면 유형별 템플릿과 배치·여백 |
