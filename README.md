@@ -63,6 +63,8 @@
 
 ## 문서
 
+Claude는 저장소를 열면 [CLAUDE.md](CLAUDE.md)(길잡이)부터 읽고, 거기 적힌 대로 필요한 파일만 열어요.
+
 | 구분 | 문서 | 내용 |
 |---|---|---|
 | 공통 | [libraries](libraries.md) | 라이브러리 4개(libraryKey), 화면 폭·그리드·여백 |
