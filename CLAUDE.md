@@ -5,20 +5,20 @@
 
 ## 언제 무엇을 읽나
 
-| 언제 | 읽을 파일 |
-|---|---|
-| 작업 시작 (항상) | 이 파일만 |
-| 화면 폭·여백·라이브러리 key가 필요할 때 | `libraries.md` (모바일/PC 해당 부분만) |
-| 색·글자·라운드·그림자 스타일을 연결할 때 | `design-system/foundations.md` |
-| 버튼·칩·태그·폼·안내 박스·모달·탭을 쓸 때 | `design-system/components.md` (쓰는 종류만) |
-| 모바일 컴포넌트·스타일을 불러올 때 | `design-system/keys-mobile.md` — 있는 key는 **검색하지 않고 바로 불러온다** |
-| PC 컴포넌트·스타일을 불러올 때 | `design-system/keys-pc.md` |
-| 상품·매장 썸네일, 카드, 골격 블록을 쓸 때 | `builder/mobile.md` (PC는 `builder/pc.md`) |
-| 배치가 막막할 때, 입력 화면을 시작할 때 | `builder/templates.md` |
-| 사용자가 as-is 원본을 찾으라고 했을 때만 | `README.md`의 "as-is 원본 화면 찾기" |
-| 다 그린 뒤 | `README.md`의 "자주 쓰는 키 추가하기" |
+**키 표가 먼저다.** 팀이 실제로 쓰는 것만 모아둔 파일이라, 대부분은 여기서 끝난다.
 
-- 표에 key가 있으면 그대로 쓰고, 없을 때만 `includeLibraryKeys`로 신상마켓 라이브러리 4개(`libraries.md`)로 좁혀 검색한다. key가 안 먹으면 검색 결과를 따른다.
+1. **먼저** `design-system/keys-mobile.md` (PC는 `design-system/keys-pc.md`) — 있는 key는 검색하지 않고 바로 불러온다. 각 파일의 "쓸 때 주의"도 같이 본다.
+2. **키 표에 없을 때만** `includeLibraryKeys`로 신상마켓 라이브러리 4개(`libraries.md`의 libraryKey)로 좁혀 검색한다. key가 안 먹을 때도 검색 결과를 따른다.
+3. **그래도 막힐 때만** 아래 참고 파일 중 해당하는 것 하나를 연다.
+
+| 막힌 것 | 참고 파일 |
+|---|---|
+| 화면 폭·여백 | `libraries.md` (모바일/PC 해당 부분만) |
+| 스타일 이름 규칙 (모바일·PC 차이) | `design-system/foundations.md` |
+| 어떤 컴포넌트를 골라야 할지 | `design-system/components.md` (쓰는 종류만) |
+| 상품·매장 썸네일, 빌더 블록 | `builder/mobile.md` (PC는 `builder/pc.md`) |
+| 배치, 입력 화면 시작 | `builder/templates.md` |
+| as-is 원본 찾기 (사용자가 찾으라고 했을 때만) | `README.md`의 "as-is 원본 화면 찾기" |
 
 ## 그리기 전
 
