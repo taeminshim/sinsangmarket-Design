@@ -4,7 +4,7 @@
 빌더(M_UI Builder) 컴포넌트 키는 [builder/mobile](../builder/mobile.md)에 있어요.
 
 > **키가 안 먹으면 검색 결과를 따라요.** 라이브러리가 업데이트되면 키가 바뀔 수 있어요. 표에 없는 컴포넌트는 `includeLibraryKeys`로 범위를 좁혀 검색해요.
-> 2026-11-02 기준, 모바일 디자인 시스템(M_Design system Guide)에서 확인한 값이에요. PC는 [builder/pc](../builder/pc.md)와 PC 라이브러리에서 따로 확인해요.
+> 2026-11-02 기준, 모바일 디자인 시스템(M_Design system Guide)에서 확인한 값이에요. PC는 [keys-pc](keys-pc.md)에 따로 쌓아요. 새 키를 넣는 법은 [README](../README.md#자주-쓰는-키-추가하기)에 있어요.
 
 불러오는 법
 - 세트(`component_set`)는 `figma.importComponentSetByKeyAsync(key)`, 단일 컴포넌트는 `importComponentByKeyAsync(key)`

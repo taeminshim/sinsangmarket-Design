@@ -35,6 +35,15 @@
 1. **원본 찾기는 먼저 물어봐요.** 원본을 찾는 데 시간과 토큰이 많이 들어요. "만들어줘"라는 요청을 받으면 바로 찾지 말고 "as-is 원본을 찾아서 할까요?"라고 먼저 물어요. 찾으라고 할 때만 아래 [as-is 원본 화면 찾기](#as-is-원본-화면-찾기)로 가요.
 2. **디자인 시스템 먼저, 빌더는 그다음이에요.** 디자인 시스템에 있는 컴포넌트를 먼저 써요. 디자인 시스템에 없을 때만(예: 상품 썸네일·카드) UI Builder에서 가져와요.
 
+## 자주 쓰는 키 추가하기
+
+팀원 누구나 키 표를 채울 수 있어요. 화면을 다 그린 뒤 Claude가 이렇게 해요.
+
+1. **먼저 물어요.** 이번 작업에서 키 표([keys-mobile](design-system/keys-mobile.md) · [keys-pc](design-system/keys-pc.md))에 없는 컴포넌트·스타일을 썼고, 다른 화면에서도 자주 쓸 것 같으면 목록을 보여주고 "키 표에 추가할까요?"라고 물어요. 묻지 않고 커밋하지 않아요.
+2. **확인하고 넣어요.** 추가하겠다고 하면 키를 실제로 한 번 불러와서 되는지 확인해요. 모바일은 keys-mobile, PC는 keys-pc의 맞는 표에 넣고, 마지막 칸에 날짜와 이름을 적어요. 이미 있는 이름이면 새로 줄을 만들지 않고 그 줄을 고쳐요.
+3. **쓸 때 주의도 같이 넣어요.** 그 컴포넌트를 쓰다가 막혔던 점이 있으면 같은 파일의 "쓸 때 주의" 표에 한 줄로 적어요.
+4. **커밋해요.** 최신 내용을 먼저 받고(`git pull`), 키 파일만 커밋해요. 메시지는 `키 추가(MO|PC): 컴포넌트 이름` 형식이에요.
+
 ## as-is 원본 화면 찾기
 
 원본을 찾으라고 했을 때 여기서 찾아요.
@@ -60,6 +69,7 @@
 | 디자인 시스템 | [foundations](design-system/foundations.md) | 색·글자·라운드·그림자 스타일, 표기 규칙 |
 | | [components](design-system/components.md) | 컴포넌트 이름 규칙, 버튼·칩·태그·폼·모달 |
 | | [keys-mobile](design-system/keys-mobile.md) | 모바일 자주 쓰는 컴포넌트·스타일 key |
+| | [keys-pc](design-system/keys-pc.md) | PC 자주 쓰는 컴포넌트·스타일 key (쌓아가는 중) |
 | UI Builder | [mobile](builder/mobile.md) | M_UI Builder — 썸네일·카드, 골격 블록 |
 | | [pc](builder/pc.md) | PC UI Builder — 썸네일·카드, 표, 푸터 |
 | | [templates](builder/templates.md) | 화면 유형별 템플릿과 배치·여백 |
