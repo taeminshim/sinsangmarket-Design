@@ -30,6 +30,15 @@
 | 템플릿 | [Building on templates](https://www.figma.com/design/7eHgyABjNbCL1fVzpbZ1IX?node-id=169-12991) | [Building on templates](https://www.figma.com/design/aFam9mIsTVZqNmKdHHYq0f?node-id=3-84) |
 | 간격 가이드 | [Page Spacing](https://www.figma.com/design/7eHgyABjNbCL1fVzpbZ1IX?node-id=480-34034) | [Page Spacing](https://www.figma.com/design/aFam9mIsTVZqNmKdHHYq0f?node-id=198-44524) |
 
+## Claude 데스크톱 앱에서 쓰기 (스킬)
+
+이 저장소는 Claude 스킬 `sinsangmarket-design`으로도 쓸 수 있어요. 스킬이 켜져 있으면 신상마켓 화면 작업을 할 때 Claude가 이 기준을 알아서 따라요.
+
+- **설치**: 조직 관리자가 [`dist/sinsangmarket-design.skill`](dist/sinsangmarket-design.skill)을 받아 조직 스킬로 한 번 올리면 팀원 모두에게 켜져요. 관리자 배포가 어려우면 각자 데스크톱 앱에서 이 파일을 스킬로 추가해도 돼요.
+- **키 표는 항상 최신**: 스킬이 작업할 때마다 이 저장소의 `keys-mobile.md`·`keys-pc.md` 최신본을 읽어요. 키를 추가해도 스킬을 다시 배포할 필요가 없어요.
+- **키 추가**: 다 그린 뒤 Claude가 "키 표에 추가할까요?"라고 물어요. 그렇다고 하면 붙여넣을 줄과 GitHub 편집 링크를 줘요. 링크를 열어 붙여넣고 **Commit changes**만 누르면 돼요 (협업자 권한 필요, git 설치 불필요).
+- **스킬 다시 만들기**: 키 표 말고 규칙·가이드 문서(`skill/sinsangmarket-design/SKILL.md`, `libraries.md`, `design-system/`, `builder/`)를 고쳤을 때만 `python3 scripts/build_skill.py`로 `dist/`의 스킬 파일을 다시 만들어 커밋하고, 관리자에게 다시 올려달라고 해요.
+
 ## 그리기 전 규칙
 
 1. **원본 찾기는 먼저 물어봐요.** 원본을 찾는 데 시간과 토큰이 많이 들어요. "만들어줘"라는 요청을 받으면 바로 찾지 말고 "as-is 원본을 찾아서 할까요?"라고 먼저 물어요. 찾으라고 할 때만 아래 [as-is 원본 화면 찾기](#as-is-원본-화면-찾기)로 가요.
