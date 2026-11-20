@@ -50,14 +50,18 @@ PC 가이드 페이지의 [시스템 네비게이션](https://www.figma.com/desi
 | [텍스트 링크](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=18085-50330) | [Large 20](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=18077-50035) · [Medium 20](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=18077-50036) · [Small 18](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=18077-50037) |
 | 테이블 | [소매 테이블](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=17642-37445) · [도매 테이블](https://www.figma.com/design/hzFtDckwBKxfz3QQBrOnHa?node-id=18054-25039) |
 
-## Claude 데스크톱 앱에서 쓰기 (스킬)
+## Claude에서 쓰기
 
-이 저장소는 Claude 스킬 `sinsangmarket-design`으로도 쓸 수 있어요. 스킬이 켜져 있으면 신상마켓 화면 작업을 할 때 Claude가 이 기준을 알아서 따라요.
+설치할 건 없어요. 이 저장소만 있으면 돼요.
 
-- **설치**: 조직 관리자가 [`dist/sinsangmarket-design.skill`](dist/sinsangmarket-design.skill)을 받아 조직 스킬로 한 번 올리면 팀원 모두에게 켜져요. 관리자 배포가 어려우면 각자 데스크톱 앱에서 이 파일을 스킬로 추가해도 돼요.
-- **키 표는 항상 최신**: 스킬이 작업할 때마다 이 저장소의 `keys-mobile.md`·`keys-pc.md` 최신본을 읽어요. 키를 추가해도 스킬을 다시 배포할 필요가 없어요.
-- **키 추가**: 다 그린 뒤 Claude가 "키 표에 추가할까요?"라고 물어요. 그렇다고 하면 붙여넣을 줄과 GitHub 편집 링크를 줘요. 링크를 열어 붙여넣고 **Commit changes**만 누르면 돼요 (협업자 권한 필요, git 설치 불필요).
-- **스킬 다시 만들기**: 키 표 말고 규칙·가이드 문서(`skill/sinsangmarket-design/SKILL.md`, `libraries.md`, `design-system/`, `builder/`)를 고쳤을 때만 `python3 scripts/build_skill.py`로 `dist/`의 스킬 파일을 다시 만들어 커밋하고, 관리자에게 다시 올려달라고 해요.
+- **Code 세션 (추천)**: 데스크톱 앱 Code 탭이나 [claude.ai/code](https://claude.ai/code)에서 새 세션을 열 때 저장소로 `taeminshim/sinsangmarket-Design`을 골라요. Claude가 [CLAUDE.md](CLAUDE.md)를 자동으로 읽고 이 기준대로 그려요. 문서는 항상 최신이고, 키 추가도 Claude가 바로 커밋해요. 세션에 Figma 커넥터가 연결돼 있어야 해요.
+- **일반 채팅**: 저장소를 고를 수 없으니 첫 메시지에 주소를 같이 줘요. 웹 가져오기가 켜져 있어야 해요.
+
+  ```
+  https://github.com/taeminshim/sinsangmarket-Design 의 CLAUDE.md를 먼저 읽고, 그 기준으로 그려줘.
+  ```
+
+  일반 채팅에서는 Claude가 직접 커밋할 수 없어서, 키를 추가할 땐 Claude가 붙여넣을 줄과 GitHub 편집 링크([모바일](https://github.com/taeminshim/sinsangmarket-Design/edit/main/design-system/keys-mobile.md) · [PC](https://github.com/taeminshim/sinsangmarket-Design/edit/main/design-system/keys-pc.md))를 줘요. 링크를 열어 붙여넣고 **Commit changes**만 누르면 돼요 (협업자 권한 필요).
 
 ## 그리기 전 규칙
 
