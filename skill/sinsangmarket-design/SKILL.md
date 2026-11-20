@@ -38,7 +38,7 @@ Figma 작업은 Figma MCP(`use_figma` 등)로 한다. 해당 Figma 스킬(`figma
 | 상품·매장 썸네일, 빌더 블록 | `references/builder/mobile.md` (PC는 `references/builder/pc.md`) |
 | 원본 없이 배치·입력 화면 시작 | `references/builder/templates.md` |
 | 다 그린 뒤 검수 | `references/design-system/audit.md` |
-| as-is 원본 찾기, Figma 바로가기 링크 | `references/README.md` |
+| as-is 원본 찾기, Figma 바로가기 링크, PC 섹션 위치 | `references/README.md` (PC는 "PC 디자인 시스템 전체 섹션") |
 
 ### 키 표는 최신본으로 읽기
 
