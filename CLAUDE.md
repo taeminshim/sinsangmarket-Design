@@ -26,7 +26,7 @@
 | 상품·매장 썸네일, 빌더 블록 | `builder/mobile.md` (PC는 `builder/pc.md`) |
 | 원본 없이 배치·입력 화면 시작 | `builder/templates.md` |
 | PC 섹션 위치 (가이드 페이지 네비게이션 링크가 깨져 있음) | `README.md`의 "PC 디자인 시스템 전체 섹션" |
-| as-is 원본 찾기 (사용자가 찾으라고 했을 때만) | `README.md`의 "as-is 원본 화면 찾기" |
+| as-is 원본 찾기 (사용자가 찾으라고 했을 때만) | `README.md`의 "as-is 원본 화면 찾기" — **산출물 시트 먼저**, Figma 인덱스는 그다음 |
 
 ## 그리기 전
 

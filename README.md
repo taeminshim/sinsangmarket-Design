@@ -75,10 +75,18 @@ PC 가이드 페이지의 [시스템 네비게이션](https://www.figma.com/desi
 
 ## as-is 원본 화면 찾기
 
-원본을 찾으라고 했을 때 여기서 찾아요.
+원본을 찾으라고 했을 때 여기서 찾아요. **아래 순서대로** 찾아요.
 
-- [최신화 파일위치 (Figma 인덱스)](https://www.figma.com/design/8ayuu3IXhH84DfVrCJaEcO) — 서비스 영역별 최신 원본 파일 링크
-- [최신화 산출물 (엑셀)](https://docs.google.com/spreadsheets/d/1GdfSsQ8HYBZTCBX8lQg0CA6ohf8sEwzHrYHYFmkiE_g) — 같은 목록을 시트로 관리
+1. **[산출물 시트 (PD 산출물 관리)](https://docs.google.com/spreadsheets/d/1GdfSsQ8HYBZTCBX8lQg0CA6ohf8sEwzHrYHYFmkiE_g)를 먼저 봐요.** 프로젝트마다 Figma 링크가 날짜순으로 쌓여서 가장 최신이에요.
+   - 서비스 탭(플러스멤버십·신상멤버십·회원·서비스개선 등)에서 기능 이름으로 프로젝트명을 찾고, **배포일이 가장 최근인 줄**의 "피그마" 열 링크를 열어요.
+   - "링크" 셀의 주소는 값으로 안 읽혀요. Google Sheets 커넥터의 `get_spreadsheet`에 `includeGridData: true`, `fields: ["sheets.data.rowData.values.hyperlink"]`를 줘서 읽어요.
+   - **Google Sheets 커넥터가 연결되어 있지 않으면 건너뛰지 말고** 바로 사용자에게 연결해 달라고 하거나(https://claude.ai/customize/connectors), 해당 줄의 링크를 붙여 달라고 해요.
+2. **시트에서 못 찾을 때만** [최신화 파일위치 (Figma 인덱스)](https://www.figma.com/design/8ayuu3IXhH84DfVrCJaEcO)를 봐요. 인덱스는 갱신이 늦어서 **예전 버전 파일**이 걸려 있을 수 있어요.
+3. **찾은 화면이 최신인지 기획서와 대조해요.** 기획서에 적힌 현재 문구·요소(바꿀 문장, 있는 버튼 등)가 화면에 없으면 최신본이 아니에요. 1로 돌아가 다른 줄을 보거나 사용자에게 물어요.
+4. 파일 안에서는 `✅ Design`·가장 최근 날짜 페이지부터, 화면 제목이나 기획서 문구로 텍스트를 검색해 프레임을 찾아요.
+5. 그래도 못 찾으면 원본 없이 그리지 말고 먼저 보고해요. 원본 없이 그릴지는 사용자가 정해요.
+
+찾은 프레임은 노드 링크로 알려주고, 작업 파일에 붙여넣어 달라고 해요. 다른 파일 화면은 API로 복사할 수 없고, 스크린샷 이미지를 올리는 것도 세션 네트워크 정책에 막힐 수 있어요.
 
 찾은 뒤에는
 - 원본 프레임을 복제해 **원본과 수정안을 나란히** 둬요.
