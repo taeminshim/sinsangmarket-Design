@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Figma",
+      "mcp__Google_Sheets__get_spreadsheet",
+      "mcp__Google_Sheets__get_values",
+      "mcp__Atlassian_Rovo__getConfluencePage",
+      "mcp__Atlassian_Rovo__search",
+      "mcp__Atlassian_Rovo__searchConfluenceUsingCql"
+    ]
+  }
+}
